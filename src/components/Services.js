@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
 import { faSpa } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
@@ -53,8 +53,27 @@ const handleClick = () => {
       </div>
       
       <h1 style={{textAlign: "center"}}>Services</h1>
+
       <div>
-        
+        <Container>
+          <Row>
+            <Col xs={6} md={4}>
+              <h1>Title</h1>
+              <img scr="#" alt="none"></img>
+              <p>description</p>
+            </Col>
+            <Col xs={6} md={4}>
+              <h1>Title</h1>
+              <img scr="#" alt="none"></img>
+              <p>description</p>
+            </Col>
+            <Col xs={6} md={4}>
+              <h1>Title</h1>
+              <img scr="#" alt="none"></img>
+              <p>description</p>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   )
