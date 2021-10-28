@@ -3,13 +3,16 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import { Navbar, Nav, Carousel, Button } from 'react-bootstrap';
 import tabletop from '../images/tabletop.png'
-// import { Container } from 'react-bootstrap';
 import { faSpa } from '@fortawesome/free-solid-svg-icons';
-import { faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faSeedling } from '@fortawesome/free-solid-svg-icons';
+// import { faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+// import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { faSeedling } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cupaction  from '../images/cupaction.png'
+import logo from '../images/Get-Healed-Logo-Black.png'
 
 
 const Home = (props) => {
@@ -24,9 +27,9 @@ const Home = (props) => {
   }
 
   const spaIcon = <FontAwesomeIcon icon={faSpa}/>
-  const medicalHandIcon = <FontAwesomeIcon icon={faHandHoldingMedical}/>
-  const heartIcon = <FontAwesomeIcon icon={faHeart}/>
-  const plantIcon = <FontAwesomeIcon icon={faSeedling}/>
+  const instagramIcon = <FontAwesomeIcon icon={faInstagram}/>
+  const linkedInIcon = <FontAwesomeIcon icon={faLinkedin}/>
+  const facebookIcon = <FontAwesomeIcon icon={faFacebook}/>
 
   return (
     <div>
@@ -43,7 +46,7 @@ const Home = (props) => {
                 <Nav.Link as={Link} to='/services'>Services</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to='/team'>Team</Nav.Link>
+                <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
               </Nav.Item>
               <Nav.Item className="ms-auto">
               { 
@@ -64,7 +67,10 @@ const Home = (props) => {
       </div>
 
       <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-        <h1 style={{textAlign : "center", fontFamily : " 'Playfair Display', serif", fontSize : "5em", margin: ".2em"}}>Get Healed Therapy</h1>
+
+        {/* <h1 style={{textAlign : "center", fontFamily : " 'Playfair Display', serif", fontSize : "5em", margin: ".2em"}}> */}
+          <img style={{height:"30%", width: "30%"}} src={logo} alt="logo"/>
+        {/* </h1> */}
         
         <Carousel>
         <Carousel.Item style={{ objectFit: "contain"}}> 
@@ -99,9 +105,9 @@ const Home = (props) => {
         </Carousel>
       </div>
           <div style={{display: "flex", justifyContent: "center", marginTop: "1em"}}>
-            <p style={{fontSize:"4em", color: "gray", marginRight: "1em"}}>{plantIcon}</p>
-            <p style={{fontSize:"4em", color: "gray"}}>{medicalHandIcon}</p>
-            <p style={{fontSize:"4em", color: "gray", marginLeft: "1em"}}>{heartIcon}</p>
+            <p style={{fontSize:"4em", color: "gray", marginRight: "1em"}}>{facebookIcon}</p>
+            <p style={{fontSize:"4em", color: "gray"}}>{instagramIcon}</p>
+            <p style={{fontSize:"4em", color: "gray", marginLeft: "1em"}}>{linkedInIcon}</p>
           </div>
 
     </div>

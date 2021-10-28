@@ -6,7 +6,7 @@ import Login from './components/registrations/Login';
 import Signup from './components/registrations/Signup';
 import Mission from './components/Mission';
 import Services from './components/Services'
-import Team from './components/Team'
+import Contact from './components/Contact'
 
 class App extends Component {
   constructor(props) {
@@ -79,9 +79,9 @@ class App extends Component {
               <Services {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
               )}
             />
-            <Route exact path='/team'
+            <Route exact path='/contact'
             render = {props => (
-              <Team {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
+              <Contact {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
               )}
             />
           </Switch>

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { Navbar, Nav, Button} from 'react-bootstrap';
@@ -6,7 +5,9 @@ import { faSpa } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 
-const Mission = (props) => {
+const Contact= (props) => {
+
+
   const spaIcon = <FontAwesomeIcon icon={faSpa}/>
 
   const handleClick = () => {
@@ -19,6 +20,7 @@ const Mission = (props) => {
   }
 
   return (
+   
     <div>
       <div>
         <Navbar bg='light' variant='light'>
@@ -52,9 +54,9 @@ const Mission = (props) => {
         </Navbar>    
       </div>
       
-      <h1 style={{textAlign: "center", margin: "2em"}}>Mission</h1>
+      <h1 style={{textAlign: "center", margin: "2em"}}>Contact</h1>
     </div>
   )
 }
 
-export default Mission
+export default Contact
