@@ -37,7 +37,7 @@ const Home = (props) => {
         <Navbar bg='light' variant='light'>
             <Nav className="container-fluid">
               <Nav.Item>
-                <Navbar.Brand as={Link} to='/'>{spaIcon}</Navbar.Brand>
+                <Navbar.Brand as={Link} to='/' class="spaIcon">{spaIcon}</Navbar.Brand>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link as={Link} to='/mission'>Mission</Nav.Link>
@@ -99,7 +99,7 @@ const Home = (props) => {
               <br></br>
               Massage Therapy. Massage is natural healing for injuries, pain relief, mental wellness, etc. Find the best plan for you.
             </h5>
-            <p><Button as={Link} to="/treatments" variant="light">Services</Button></p>
+            <p><Button as={Link} to="/services" variant="light">Services</Button></p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

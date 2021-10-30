@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import { Navbar, Nav, Button} from 'react-bootstrap';
 import { faSpa } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import janesPic from '../images/PHOTO-2021-10-12-11-18-14.jpg'
 import axios from 'axios';
 
 const Mission = (props) => {
@@ -24,7 +25,7 @@ const Mission = (props) => {
         <Navbar bg='light' variant='light'>
             <Nav className="container-fluid">
               <Nav.Item>
-                <Navbar.Brand as={Link} to='/'>{spaIcon}</Navbar.Brand>
+                <Navbar.Brand as={Link} to='/' class="spaIcon">{spaIcon} </Navbar.Brand>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link as={Link} to='/mission'>Mission</Nav.Link>
@@ -52,8 +53,20 @@ const Mission = (props) => {
         </Navbar>    
       </div>
       
-      <h1 style={{textAlign: "center", margin: "2em"}}>Mission</h1>
+      <h1 style={{textAlign: "center", margin: "1em"}} className="pageTitle">Mission</h1>
+      <div style={{display:'flex', flex:"flex-wrap", justifyContent: "space-between", alignItems: "center"}}>
+        <div style={{marginRight: "2em"}}>
+          <h3 style={{marginBottom: "1em"}}><b>Jane Flores-Tober</b> - Founder</h3>
+          <p>
+          She graduated from Cortiva Institute in 2014. Many years of her experience were spent doing medical massage in chiropractic offices. She is a veteran to trigger point therapy. Her goal for clients is to create a treatment plan designed for their journey of self care. 
+          </p>
+        </div>
+        <div>
+          <img alt="profilePic" src={janesPic} style={{height: "80%", width: "90%"}} class="sketchy"/>
+        </div>
+      </div>
     </div>
+
   )
 }
 

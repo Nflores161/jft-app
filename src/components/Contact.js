@@ -26,7 +26,7 @@ const Contact= (props) => {
         <Navbar bg='light' variant='light'>
             <Nav className="container-fluid">
               <Nav.Item>
-                <Navbar.Brand as={Link} to='/'>{spaIcon}</Navbar.Brand>
+                <Navbar.Brand as={Link} to='/' class="spaIcon">{spaIcon}</Navbar.Brand>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link as={Link} to='/mission'>Mission</Nav.Link>
@@ -54,7 +54,7 @@ const Contact= (props) => {
         </Navbar>    
       </div>
       
-      <h1 style={{textAlign: "center", margin: "2em"}}>Contact</h1>
+      <h1 style={{textAlign: "center", margin: "1em"}} className="pageTitle">Contact</h1>
     </div>
   )
 }

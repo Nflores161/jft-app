@@ -52,7 +52,7 @@ const handleClick = () => {
         </Navbar>    
       </div>
       
-      <h1 style={{textAlign: "center", margin: "2em"}}>Services</h1>
+      <h1 style={{textAlign: "center", margin: "1em"}} className="pageTitle">Services</h1>
 
         <div style={{display: "flex", flexDirection: "column", marginBottom: "2em"}}>
 
@@ -64,9 +64,9 @@ const handleClick = () => {
               <div >
                 <h2>Prices</h2>
                 <ul style={{listStyleType: "none", margin: "0", padding: "0"}}>  
-                  <li>60 Mins - $80</li>
-                  <li>90 Mins - $110</li>
-                  <li>120 Mins - $130</li>
+                  <li>60 Mins - $90</li>
+                  <li>90 Mins - $120</li>
+                  <li>120 Mins - $170</li>
                 </ul>
               </div>
             </div>  
@@ -79,9 +79,9 @@ const handleClick = () => {
             </div> 
             <div>
               <ul style={{listStyleType: "none", margin: "0", padding: "0"}}>  
-                <li>60 Mins - $80</li>
-                <li>90 Mins - $110</li>
-                <li>120 Mins - $130</li>
+                <li>60 Mins - $90</li>
+                <li>90 Mins - $120</li>
+                <li>120 Mins - $170</li>
               </ul>
             </div>  
           </div>   
@@ -93,9 +93,9 @@ const handleClick = () => {
             </div>
             <div>
               <ul style={{listStyleType: "none", margin: "0", padding: "0"}}>  
-                <li>60 Mins - $80</li>
-                <li>90 Mins - $110</li>
-                <li>120 Mins - $130</li>
+                <li>30 Mins - $45</li>
+                <li>60 Mins - $110</li>
+                <li>90 Mins - $140</li>
               </ul>
             </div>
           </div>   
